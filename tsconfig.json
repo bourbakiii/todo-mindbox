@@ -1,7 +1,30 @@
 {
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    // ...rest of the template
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@lib": [
+        "./lib/*"
+      ],
+      "@src": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "lib"
   ]
 }
